@@ -262,7 +262,7 @@ type
     FT_DEVICE_2232HA,
     FT_DEVICE_4232HA
   );
-  PFTDevice = TFTDevice;
+  PFTDevice = ^TFTDevice;
 
   {$minEnumSize default}
 
@@ -421,7 +421,7 @@ type
     FT_FLAGS_OPENED = 1,
     FT_FLAGS_HISPEED = 2
   );
-  PFTDevice_Flags = TFTDevice_Flags;
+  PFTDevice_Flags = ^TFTDevice_Flags;
 
   {$minEnumSize default}
 
@@ -3346,6 +3346,3 @@ implementation
 
 
 end.
-
-
-
